@@ -21,6 +21,8 @@ Original script by Sorrow. Credit to [@zhaarey](https://github.com/zhaarey) and 
 - Add support for synchronized and unsynchronized lyrics.
 - Add support for decoding files for arm64 platforms.
 
+### Special thanks to chocomint for creating agent-arm64.js
+
 ### Supported Formats
 
 - ALAC `(audio-alac-stereo)`
