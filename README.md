@@ -66,7 +66,7 @@ For AAC downloads, it is recommended to use [WorldObservationLog's AppleMusicDec
 wget "https://github.com/itouakirai/wrapper/releases/download/linux/wrapper.linux.x86_64.tar.gz" && mkdir wrapper && tar -xzf wrapper.linux.x86_64.tar.gz -C wrapper
 ```
 2. Start the **wrapper daemon**:
-- With command:
+- By command:
     1. `cd` to wrapper directory
     ```sh
     cd wrapper
@@ -84,7 +84,7 @@ wget "https://github.com/itouakirai/wrapper/releases/download/linux/wrapper.linu
 
 > [!WARNING]
 > The following script is still in the testing stage; I do not guarantee the script will fully work.
-- With **python script** (beta):
+- By **python script** (beta):
     1. Download the following file to your host and make it executable:
     ```sh
     wget "https://raw.githubusercontent.com/ChocolaMilk92/apple-music-alac-atmos-downloader/main/wrapper.py"
