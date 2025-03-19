@@ -5,11 +5,13 @@ Original script by Sorrow. Credit to [@zhaarey](https://github.com/zhaarey) and 
 > [!IMPORTANT]
 > Install MP4Box before continuing. Ensure it's correctly added to the environment variables.\
 > You can do this by entering `apt install wget git golang gpac ffmpeg nano -y` in your terminal.
+> Also, [mp4decrypt](https://www.bento4.com/downloads/) is required if you wish to download MV.
 
 ## New Features
 
 - MP4Box will be called automatically to package EC3 as M4A file.
 - Changed the directory structure to `ArtistName\AlbumName`; For Atmos files, its directory structure has changed to `ArtistName\AlbumName [Atmos]` and files are moved into `AM-DL-Atmos downloads`.
+- The download and decryption part has been replaced with Sendy McSenderson's code to achieve decryption while downloading, which would resolve the issue of insufficient memory when decrypting large files.
 - Add support for overall completion status display upon finishing the run.
 - Automatically embed cover art and LRC lyrics (requires `media-user-token`).
 - Supports `check` with `main`, which can take a text address or API database.
@@ -20,6 +22,7 @@ Original script by Sorrow. Credit to [@zhaarey](https://github.com/zhaarey) and 
 - Add support for length limitation with `limit-max` (default value of `limit-max` is 200).
 - Add support for synchronized and unsynchronized lyrics.
 - Add support for decoding files for arm64 platforms.
+- MV downloading is now supported (requires [mp4decrypt](https://www.bento4.com/downloads/))
 
 ### Special thanks to `chocomint` for creating agent-arm64.js
 
@@ -27,8 +30,10 @@ Original script by Sorrow. Credit to [@zhaarey](https://github.com/zhaarey) and 
 
 - ALAC `(audio-alac-stereo)`
 - EC3 `(audio-atmos / audio-ec3)`
+- MV
 
-For AAC downloads, it is recommended to use [WorldObservationLog's AppleMusicDecrypt](https://github.com/WorldObservationLog/AppleMusicDecrypt).
+> [!NOTE]
+> For AAC downloads, it is recommended to use [WorldObservationLog's AppleMusicDecrypt](https://github.com/WorldObservationLog/AppleMusicDecrypt).
 
 ### Supported formats for AppleMusicDecrypt
 
@@ -38,6 +43,7 @@ For AAC downloads, it is recommended to use [WorldObservationLog's AppleMusicDec
 - AAC `(audio-stereo)`
 - AAC-binaural `(audio-stereo-binaural)`
 - AAC-downmix `(audio-stereo-downmix)`
+- MV
 
 ## How To Use
 
